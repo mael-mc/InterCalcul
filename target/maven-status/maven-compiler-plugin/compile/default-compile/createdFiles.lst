@@ -1,0 +1,8 @@
+module-info.class
+ec\edu\espoch\intercalcul\controller\interfaces\InterfazCalculadoraController.class
+ec\edu\espoch\intercalcul\PrimaryController.class
+ec\edu\espoch\intercalcul\model\data\Calculadoras.class
+ec\edu\espoch\intercalcul\model\object\Calculadora.class
+ec\edu\espoch\intercalcul\App.class
+ec\edu\espoch\intercalcul\model\access\InterCalculadora.class
+ec\edu\espoch\intercalcul\SecondaryController.class

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="ec.edu.espoch.intercalcul.controller.interfaces.InterfazCalculadoraController">
+    <stylesheets>
+        <URL value="@/styles/interfazcalculadora.css" />
+    </stylesheets>
+    
+    <VBox alignment="CENTER" layoutX="11.0" layoutY="7.0" prefHeight="385.0" prefWidth="568.0" spacing="15" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="7.0">
+
+        <Label styleClass="title-label" text="Calculadora Simple" />
+
+        <TextField fx:id="txtNum1" promptText="Número 1" styleClass="input" />
+        <TextField fx:id="txtNum2" promptText="Número 2" styleClass="input" />
+
+        <Button fx:id="btnSumar" onAction="#sumar" styleClass="btn-primary" text="Sumar +" />
+
+        <Label fx:id="lblResultado" styleClass="message-label" />
+
+    </VBox>
+    
+</AnchorPane>
