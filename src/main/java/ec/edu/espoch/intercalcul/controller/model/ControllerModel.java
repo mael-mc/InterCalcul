@@ -17,20 +17,19 @@ public class ControllerModel {
     public ControllerCalculadora(View view){
         
         calculadora = new Calculadora();
-        this.view=view;
+        this.interfazcalculadoracontroller = interfazcalculadoracontroller;
     }
     
     public void controller(){
         
         try {
-            double numberOne = Double.parseDouble(view.getNumUno());
-            double numberTwo = Double.parseDouble(view.getNumDos());
-            
+            double numberOne = Double.parseDouble(interfazcalculadoracontroller.getNumUno());
+            double numberTwo = Double.parseDouble(interfazcalculadoracontroller.getNumDos());
             calculadora.setNumUno(numberOne);
             calculadora.setNumDos(numberTwo);
-            double resultado = metodosCalcu.sumar(calculadora);
             
-            view.mostrar(resultado);
+            double resultado = interCalculadora.sumar(calculadora);
+            interfazcalculadoracontroller.mostrar(resultado);
             
         } catch (Exception e) {
             
